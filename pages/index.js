@@ -7,45 +7,46 @@ import GiftCard from "../components/GiftCard";
 import { useState } from "react";
 import Image from "next/image";
 
-export default function Home({ feed }) {
-  let [numOfImages, setNumOfImages] = useState(6);
+export default function Home() {
+  // let [numOfImages, setNumOfImages] = useState(6);
 
-  const loadClick = () => {
-    setNumOfImages(numOfImages + 6);
-  };
+  // const loadClick = () => {
+  //   setNumOfImages(numOfImages + 6);
+  // };
 
-  const arr = feed.data.filter((item) => item.media_type === "IMAGE");
-  //console.log(arr);
-  const images = arr.splice(0, numOfImages);
+  // const arr = feed.data.filter((item) => item.media_type === "IMAGE");
+  // //console.log(arr);
+  // const images = arr.splice(0, numOfImages);
 
   return (
     <div>
       <SEO
         title="Home"
-        description="The Anchor, Digbeth is a place of comfort to enjoy real ale, ciders, craft beers, wine, spirits and even cocktails, modern drinking in a traditional boozer."
+        description="Cartlands Tea Rooms is located within the heart of Kings Heath Park.
+            We are a high quality facility within a beautiful location, serving
+            afternoon tea sandwiches, cakes, teas, coffees . Bespoke gourmet
+            hampers for all those seasonal treats."
       />
-      <Carousel />
-      <header className="text-light text-center container pt-3">
+      {/* <Carousel /> */}
+      <header className="text-dark text-center container pt-3">
         <h2 className="fs-5 baskerville-font">
           Welcome To <br />
-          <span className="h2 text-primary">The Anchor Digbeth</span>
+          <span className="h2 text-primary">The Cartlands Independent</span>
         </h2>
         <div className="d-flex justify-content-center">
           <p className="h2 text-primary baskerville-font"></p>
         </div>
         <div className="d-flex justify-content-center">
           <p className="my-2 text-container">
-            The Anchor, as it is now known &#40;we dropped the
-            &#8216;Inn&#8217;&#41; is still a free house so we are free to
-            present you with the best and more interesting products available.
-            We don&apos;t intend to re-invent the wheel, our aim is simply to
-            provide a friendly space for everyone to enjoy great beer, wine,
-            coffee, cocktails and spirits with great service. Simple.
+            Cartlands Tea Rooms is located within the heart of Kings Heath Park.
+            We are a high quality facility within a beautiful location, serving
+            afternoon tea sandwiches, cakes, teas, coffees . Bespoke gourmet
+            hampers for all those seasonal treats.
           </p>
         </div>
       </header>
       <main>
-        <section>
+        {/* <section>
           <Drinks />
         </section>
         <section>
@@ -84,12 +85,9 @@ export default function Home({ feed }) {
               <button className="btn">go to instagram</button>
             </a>
           </div>
-        </section>
+        </section> */}
         <section>
           <Events />
-        </section>
-        <section>
-          <GiftCard />
         </section>
         <section>
           <ContactForm />
@@ -99,15 +97,15 @@ export default function Home({ feed }) {
   );
 }
 
-export const getStaticProps = async () => {
-  const apiUrl = `https://graph.instagram.com/me/media?fields=id,username,caption,media_url,timestamp,media_type,permalink&access_token=${process.env.INSTAGRAM_KEY}`;
-  const data = await fetch(apiUrl);
-  const feed = await data.json();
+// export const getStaticProps = async () => {
+//   const apiUrl = `https://graph.instagram.com/me/media?fields=id,username,caption,media_url,timestamp,media_type,permalink&access_token=${process.env.INSTAGRAM_KEY}`;
+//   const data = await fetch(apiUrl);
+//   const feed = await data.json();
 
-  return {
-    props: {
-      feed,
-    },
-    revalidate: 3600,
-  };
-};
+//   return {
+//     props: {
+//       feed,
+//     },
+//     revalidate: 3600,
+//   };
+// };

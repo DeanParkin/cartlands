@@ -29,9 +29,8 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="mt-3">
-        <NewsLetter />
-        <div className="container footer-container text-light">
+      <footer className="mt-3 border-top border-dark bg-dark text-light">
+        <div className="container footer-container">
           <div className="row my-4 fs-5">
             <div className="col-md-4">
               <div className="opening-hours-container text-uppercase">
@@ -83,21 +82,27 @@ const Footer = () => {
 
             {/* <div className="col-md-4 address-container"> */}
             <address className="col-md-4 address-container m-0">
-              THE ANCHOR, <br />
-              308 BRADFORD STREET, <br />
-              BIRMINGHAM, <br />
-              B5 6ET
+              Cartlands Independent <br />
+              Kings Heath Park House <br />
+              Vicarage Rd <br />
+              Birmingham <br />
+              B14 7TQ
             </address>
             {/* </div> */}
           </div>
           <div className="d-flex justify-content-center">
             <p className="text-center fs-5">
               Please let us know how we&apos;re doing with a{" "}
-              <a href="https://g.page/TheAnchorDigbeth?share">review</a>
+              <a
+                href="https://g.page/TheAnchorDigbeth?share"
+                className="link-light"
+              >
+                review
+              </a>
             </p>
           </div>
         </div>
-        <div className="social-container border-top border-primary">
+        <div className="social-container border-top border-light">
           <div className="container d-flex justify-content-around fs-3 align-items-center py-4">
             <a
               href="https://www.facebook.com/TheAnchorDigbeth/"
@@ -153,9 +158,9 @@ const Footer = () => {
         </div>
         <div className="copyright-container">
           <div className="container">
-            <div className="copyright-container justify-content-center text-center fs-6">
+            <div className="copyright-container justify-content-center text-center fs-6 text-light">
               <p className="copyright mb-1">
-                <span className="text-light">
+                <span>
                   &copy; 2020 - {new Date().getFullYear()} THE ANCHOR. ALL
                   RIGHTS RESERVED.
                 </span>
@@ -164,7 +169,7 @@ const Footer = () => {
                 href="https://www.theanchordigbeth.co.uk/privacy-policy"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="privacy-policy-link px-3 mb-3"
+                className="privacy-policy-link px-3 mb-3 link-light"
               >
                 Privacy Policy
               </a>
@@ -172,14 +177,18 @@ const Footer = () => {
                 href="https://www.theanchordigbeth.co.uk/privacy-policy"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="privacy-policy-link mb-3"
+                className="privacy-policy-link mb-3 link-light"
               >
                 Terms &amp; Conditions
               </a>
             </div>
             <div className="d-flex justify-content-center">
-              <p className="text-center text-light pb-4">
-                Website developed by <a href="#">Plan;D</a>.
+              <p className="text-center pb-4">
+                Website developed by{" "}
+                <a href="#" className="link-light">
+                  Plan;D
+                </a>
+                .
               </p>
             </div>
           </div>

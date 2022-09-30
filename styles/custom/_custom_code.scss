@@ -1,97 +1,97 @@
-//
-//Pland Custom Code file for Bootstrap 5.2.0
-//
-//Contents
-//--------
-//1. Globals
-//2. Newsletter
-//3. Navbar
-//4. Contact Form
-//5. Footer
-//6. Loader
-//7. Hamburger Icon Animation
-//8. Card Image
+// //
+// //Pland Custom Code file for Bootstrap 5.2.0
+// //
+// //Contents
+// //--------
+// //1. Globals
+// //2. Newsletter
+// //3. Navbar
+// //4. Contact Form
+// //5. Footer
+// //6. Loader
+// //7. Hamburger Icon Animation
+// //8. Card Image
 
-//================================================
-//Globals
-//================================================
+// //================================================
+// //Globals
+// //================================================
 
-.baskerville-font {
-  font-family: "Libre Baskerville", serif;
-}
+// .baskerville-font {
+//   font-family: "Libre Baskerville", serif;
+// }
 
-.oswald-font {
-  font-family: "Proxima Bold", sans-serif;
-}
+// .oswald-font {
+//   font-family: "Proxima Bold", sans-serif;
+// }
 
-//Overide btn Font
-.btn {
-  font-family: "Proxima Bold", sans-serif;
-  text-transform: uppercase;
-}
+// //Overide btn Font
+// .btn {
+//   font-family: "Proxima Bold", sans-serif;
+//   text-transform: uppercase;
+// }
 
-button.btn {
-  background-color: $primary;
-  color: #000;
-  border-color: $primary;
-  --bs-btn-hover-border-color: $primary;
-  // &:hover {
-  //   background-color: #000;
-  //   color: $primary;
-  // }
-  :not(.btn-check) + &:hover,
-  &:first-child:hover {
-    background-color: #000;
-    color: $primary;
-    border-color: $primary;
-  }
-}
+// button.btn {
+//   background-color: $primary;
+//   color: #000;
+//   border-color: $primary;
+//   --bs-btn-hover-border-color: $primary;
+//   // &:hover {
+//   //   background-color: #000;
+//   //   color: $primary;
+//   // }
+//   :not(.btn-check) + &:hover,
+//   &:first-child:hover {
+//     background-color: #000;
+//     color: $primary;
+//     border-color: $primary;
+//   }
+// }
 
-.text-container {
-  max-width: 700px;
-}
+// .text-container {
+//   max-width: 700px;
+// }
 
-//================================================
-//Newsletter
-//================================================
+// //================================================
+// //Newsletter
+// //================================================
 
-div.input-group input.newsletter-input {
-  border-radius: 0;
-  border-color: #000;
-}
-div div.input-group input.newsletter-submit.btn {
-  background-color: #000;
-  color: $primary;
-  border-radius: 0;
-  border-color: #000;
-  &:hover {
-    background-color: $primary;
-    color: #000;
-  }
-}
+// div.input-group input.newsletter-input {
+//   border-radius: 0;
+//   border-color: #000;
+// }
+// div div.input-group input.newsletter-submit.btn {
+//   background-color: #000;
+//   color: $primary;
+//   border-radius: 0;
+//   border-color: #000;
+//   &:hover {
+//     background-color: $primary;
+//     color: #000;
+//   }
+// }
 
-//================================================
-//Navbar
-//================================================
+// //================================================
+// //Navbar
+// //================================================
 
-.navbar-nav > li > a.nav-link {
-  font-family: "Proxima Bold", sans-serif;
-  font-size: 25px;
-  //letter-spacing: 0.1em;
-  font-weight: 700;
-  &:hover {
-    color: #000;
-  }
-}
+// .navbar-nav > li > a.nav-link {
+//   font-family: "Proxima Bold", sans-serif;
+//   font-size: 25px;
+//   //letter-spacing: 0.1em;
+//   font-weight: 700;
+//   &:hover {
+//     color: #000;
+//   }
+// }
 
-//================================================
-//Contact Form
-//================================================
-.contact-form {
-  width: 100%;
-  margin-top: 20px;
-  max-width: 700px;
-}
+// //================================================
+// //Contact Form
+// //================================================
+// .contact-form {
+//   width: 100%;
+//   margin-top: 20px;
+//   max-width: 700px;
+// }
 
 //================================================
 //Footer
@@ -105,7 +105,7 @@ div div.input-group input.newsletter-submit.btn {
 
 .opening-hours-dots {
   width: 98%;
-  border-bottom: 2px dotted #e1e1e1;
+  border-bottom: 2px dotted;
   margin-bottom: 10px;
   align-items: baseline;
   position: relative;
@@ -144,7 +144,7 @@ div div.input-group input.newsletter-submit.btn {
   transition: all 0.35s ease-in-out;
 }
 .social-link {
-  color: #fff;
+  color: $light;
   &:hover {
     color: $primary;
   }
@@ -272,12 +272,12 @@ div div.input-group input.newsletter-submit.btn {
   @include transform(scale(0));
 }
 
-//================================================
-//Card Image
-//================================================
+// //================================================
+// //Card Image
+// //================================================
 
-//fixes the displaying aspect ratio of the image
-.card-img {
-  width: 100%;
-  object-fit: cover;
-}
+// //fixes the displaying aspect ratio of the image
+// .card-img {
+//   width: 100%;
+//   object-fit: cover;
+// }

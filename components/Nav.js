@@ -17,11 +17,6 @@ export default function Nav({ children }) {
     route == ""
       ? { class: "nav-link active", aria: "page", href: "/" }
       : { class: "nav-link", aria: "", href: "/" };
-
-  let drinks =
-    route == "drinks"
-      ? { class: "nav-link active", aria: "page", href: "/" }
-      : { class: "nav-link", aria: "", href: "/" };
   let events =
     route == "events"
       ? { class: "nav-link active", aria: "page", href: "/" }
@@ -34,8 +29,8 @@ export default function Nav({ children }) {
     route == "gallery"
       ? { class: "nav-link active", aria: "page", href: "/" }
       : { class: "nav-link", aria: "", href: "/" };
-  let giftvoucher =
-    route == "giftvoucher"
+  let menu =
+    route == "menu"
       ? { class: "nav-link active", aria: "page", href: "/" }
       : { class: "nav-link", aria: "", href: "/" };
 
@@ -92,7 +87,7 @@ export default function Nav({ children }) {
 
   return (
     <>
-      <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-primary">
+      <nav className="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
           <div className="me-2" style={{ height: "60px" }}>
             <h1 className="m-0">
@@ -140,18 +135,15 @@ export default function Nav({ children }) {
                   </a>
                 </Link>
               </li>
-              <li
-                className="nav-item me-2"
-                //data-bs-toggle="collapse"
-              >
-                <Link href="/drinks">
+              <li className="nav-item me-2">
+                <Link href="/menu">
                   <a
-                    className={drinks.class}
+                    className={menu.class}
                     onClick={linkClick}
                     //aria-current={home.aria}
                     //aria-current="page"
                   >
-                    Drinks
+                    Menu
                   </a>
                 </Link>
               </li>
@@ -176,18 +168,6 @@ export default function Nav({ children }) {
                     //aria-current="page"
                   >
                     Events
-                  </a>
-                </Link>
-              </li>
-              <li className="nav-item me-2">
-                <Link href="/giftvoucher">
-                  <a
-                    className={giftvoucher.class}
-                    onClick={linkClick}
-                    //aria-current={home.aria}
-                    //aria-current="page"
-                  >
-                    gift voucher
                   </a>
                 </Link>
               </li>
