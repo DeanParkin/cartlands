@@ -12,7 +12,7 @@ const Events = () => {
   return (
     <>
       <div className="container text-center pt-3">
-        <h2 className="h2 text-primary baskerville-font">Events</h2>
+        <h2 className="h2 text-primary playfair-font">Events</h2>
         <div className="d-flex justify-content-center">
           <p className="text-dark">Check out some of our events</p>
         </div>

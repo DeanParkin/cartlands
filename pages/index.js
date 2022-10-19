@@ -29,9 +29,11 @@ export default function Home() {
       />
       {/* <Carousel /> */}
       <header className="text-dark text-center container pt-3">
-        <h2 className="fs-5 baskerville-font">
+        <h2 className="fs-5">
           Welcome To <br />
-          <span className="h2 text-primary">The Cartlands Independent</span>
+          <span className="h2 text-primary playfair-font">
+            The Cartlands Independent
+          </span>
         </h2>
         <div className="d-flex justify-content-center">
           <p className="h2 text-primary baskerville-font"></p>

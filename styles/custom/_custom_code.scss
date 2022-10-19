@@ -16,7 +16,7 @@
 // //Globals
 // //================================================
 
-.playfairDisplay-font {
+.playfair-font {
   font-family: "Playfair Display", serif;
 }
 
@@ -113,7 +113,7 @@
   margin-bottom: 10px;
   align-items: baseline;
   position: relative;
-  top: -11px;
+  top: -12px;
 }
 
 .opening-hours-time {
@@ -124,7 +124,7 @@
 
 .opening-hours {
   //text-transform: uppercase;
-  font-family: "Proxima", sans-serif;
+  //font-family: "Proxima", sans-serif;
   display: table;
   // font-size: 16px;
   white-space: nowrap;

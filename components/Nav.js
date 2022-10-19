@@ -109,7 +109,7 @@ export default function Nav({ children }) {
             </div>
           </button>
           <div className="collapse navbar-collapse" id="navbarToggler">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0 text-capitalize playfairDisplay-font">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0 text-capitalize playfair-font">
               {navItems.map((link) => {
                 let x = link.href.slice(1);
                 let activeClass =

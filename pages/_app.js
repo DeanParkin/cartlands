@@ -100,7 +100,7 @@ function MyApp({ Component, pageProps }) {
         // style={{ fontFamily: "Quicksand, sans-serif", textAlign: "center" }}
         buttonWrapperClasses="d-flex justify-content-end"
         buttonClasses="btn btn-primary"
-        containerClasses="alert alert-primary fixed-bottom d-sm-flex justify-content-between"
+        containerClasses="alert alert-primary fixed-bottom d-sm-flex justify-content-between mb-0"
         contentClasses="text-capitalize text-center d-flex fs-6"
         buttonText="I Understand"
         expires={1}

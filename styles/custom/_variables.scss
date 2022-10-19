@@ -25,6 +25,15 @@
 }
 
 @font-face {
+  font-family: "Cutive";
+  src: url("../../public/fonts/cutivemono-regular-webfont.woff2")
+      format("woff2"),
+    url("../../public/fonts/cutivemono-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "libre Baskerville";
   src: url("../../public/fonts/librebaskerville-regular-webfont.woff2")
       format("woff2"),
@@ -76,7 +85,7 @@
 //Font Variables
 //================================================
 
-$font-family-sans-serif: "Proxima", "Noto Sans", "Liberation Sans", sans-serif,
+$font-family-sans-serif: "Cutive", "Noto Sans", "Liberation Sans", sans-serif,
   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
   "Liberation Mono", "Courier New", monospace;
