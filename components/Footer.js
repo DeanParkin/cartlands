@@ -99,7 +99,7 @@ const Footer = () => {
             <div className="col-md-2 p-3"></div>
 
             {/* <div className="col-md-4 address-container"> */}
-            <address className="col-md-5 playfair-font m-0">
+            <address className="col-md-5 baskerville-font m-0">
               Cartlands Independent <br />
               Kings Heath Park House <br />
               Vicarage Rd <br />
