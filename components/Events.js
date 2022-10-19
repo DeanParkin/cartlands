@@ -9,6 +9,38 @@ import event5 from "../public/imgs/Events/LIVE_MUSIC_WEB.jpg";
 import event6 from "../public/imgs/Events/TRADE_WEB.jpg";
 
 const Events = () => {
+  const eventsList = [
+    {
+      name: "German Conversation",
+      image: event1,
+      day: "Monday",
+      time: "11:30 - 12:30",
+    },
+    {
+      name: "Moo Music",
+      image: event2,
+      day: "Tuesday",
+      time: "9:30 am",
+    },
+    {
+      name: "Baby Spanish",
+      image: event3,
+      day: "Wednesday",
+      time: "10 am",
+    },
+    {
+      name: "Italian Conversation",
+      image: event3,
+      day: "Thursday",
+      time: "all day",
+    },
+    {
+      name: "Art with Robert",
+      image: event3,
+      day: "Mondays, Wednesdays & Thursdays",
+      time: "all day",
+    },
+  ];
   return (
     <>
       <div className="container text-center pt-3">
@@ -17,104 +49,21 @@ const Events = () => {
           <p className="text-dark">Check out some of our events</p>
         </div>
       </div>
-      <div className="container mt-4">
-        <div className="row">
-          <div className="col-md-6">
-            <div className="card mb-2 border-primary">
-              <Image
-                src={event1}
-                alt="The Anchor has a wide range of beer"
-                className="d-block w-100"
-                //priority={true}
-                placeholder="blur"
-                // width={1350}
-                // height={600}
-                //objectFit="fill"
-                //objectFit="cover"
-                layout="responsive"
-              />
-            </div>
-          </div>
-          <div className="col-md-6">
-            <div className="card mb-2 border-primary">
-              <Image
-                src={event2}
-                alt="The Anchor has a wide range of beer"
-                className="d-block w-100"
-                //priority={true}
-                placeholder="blur"
-                // width={1350}
-                // height={600}
-                //objectFit="fill"
-                //objectFit="cover"
-                layout="responsive"
-              />
-            </div>
-          </div>
-          <div className="col-md-6">
-            <div className="card mb-2 border-primary">
-              <Image
-                src={event3}
-                alt="The Anchor has a wide range of beer"
-                className="d-block w-100"
-                //priority={true}
-                placeholder="blur"
-                // width={1350}
-                // height={600}
-                //objectFit="fill"
-                //objectFit="cover"
-                layout="responsive"
-              />
-            </div>
-          </div>
-          <div className="col-md-6">
-            <div className="card mb-2 border-primary">
-              <Image
-                src={event4}
-                alt="The Anchor has a wide range of beer"
-                className="d-block w-100"
-                //priority={true}
-                placeholder="blur"
-                // width={1350}
-                // height={600}
-                //objectFit="fill"
-                //objectFit="cover"
-                layout="responsive"
-              />
-            </div>
-          </div>
-          <div className="col-md-6">
-            <div className="card mb-2 border-primary">
-              <Image
-                src={event5}
-                alt="The Anchor has a wide range of beer"
-                className="d-block w-100"
-                //priority={true}
-                placeholder="blur"
-                // width={1350}
-                // height={600}
-                //objectFit="fill"
-                //objectFit="cover"
-                layout="responsive"
-              />
-            </div>
-          </div>
-          <div className="col-md-6">
-            <div className="card mb-2 border-primary">
-              <Image
-                src={event6}
-                alt="The Anchor has a wide range of beer"
-                className="d-block w-100"
-                //priority={true}
-                placeholder="blur"
-                // width={1350}
-                // height={600}
-                //objectFit="fill"
-                //objectFit="cover"
-                layout="responsive"
-              />
-            </div>
-          </div>
+      <div className="container">
+        <div className="row justify-content-md-center">
+          {eventsList.map((event, key) => {
+            return (
+              <div className="col-md-6" key={key}>
+                <div className="card border-primary mb-2">
+                  {/* <img src="#" className="card-img-top" alt="..." /> */}
+                  <div className="card-body">
+                    <h5 className="card-title">{event.name}</h5>
+                    <p className="card-text">{`${event.day} ${event.time}`}</p>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </>
