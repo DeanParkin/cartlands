@@ -35,8 +35,8 @@ const Footer = () => {
     if (navigator.share) {
       try {
         await navigator.share({
-          title: `The Anchor, Digbeth`,
-          text: `The Anchor, Digbeth`,
+          title: `Cartlands Independent, Kings Heath`,
+          text: `Cartlands Independent, Kings Heath`,
           url: `${url}`,
         });
       } catch (error) {
